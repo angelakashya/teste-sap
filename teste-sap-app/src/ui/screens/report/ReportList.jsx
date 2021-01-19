@@ -13,7 +13,7 @@ export function ReportList() {
     useEffect(() => {
         async function getReports() {
             const response = await api.reportList()
-            console.log(response);
+
             let result = response.data
             setReport(result)
         }

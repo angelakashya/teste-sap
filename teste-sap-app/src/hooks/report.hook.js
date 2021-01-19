@@ -1,19 +1,20 @@
 import axios from 'axios'
+import { useAxios } from './useAxios'
 
-const reportApi = axios.create({
-    baseURL: 'http://localhost:8100/teste-sap/report'
-})
+
 
 export function useReportApi() {
 
+    const axiosInstance = useAxios()
     async function reportList() {
-        const result = await reportApi.get()
+        const response = axiosInstance.get("")
 
-        return result.data
+        console.log(response);
+        return response
     }
 
     async function report(title, text) {
-        return await reportApi.post("", report)
+        return await axiosInstance.post("", report)
 
     }
 }
