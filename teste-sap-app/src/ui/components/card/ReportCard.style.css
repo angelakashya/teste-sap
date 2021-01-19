@@ -1,0 +1,27 @@
+.menu-container { 
+    margin: 10px;
+    width: 20%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu-container .menu-border { 
+    border: 5px solid  #666363;
+    margin: 0;
+    width: 100%;
+}
+
+.menu-container .menu-border .menu-card { 
+    box-sizing: border-box;
+    background-color: #ffffff ;
+    border: 5px solid #8D8686;
+    padding: 10px 0;
+}
+
+.menu-container .menu-border .menu-card .menu-title {
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #000000;
+}
