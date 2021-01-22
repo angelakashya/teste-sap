@@ -15,6 +15,7 @@ export function ReportList() {
             const response = await api.reportList()
 
             let result = response.data
+            console.log(result)
             setReport(result)
         }
         getReports()
@@ -27,7 +28,7 @@ export function ReportList() {
             </Link>
             <div className="table">
                 {(report || []).map((report, index) =>
-                    <Card title={report.title} >
+                    <Card title={report.title}>
                         <p>{report.text}</p>
                     </Card>
                 )}

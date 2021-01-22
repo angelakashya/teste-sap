@@ -14,7 +14,9 @@ export function useReportApi() {
     }
 
     async function report(title, text) {
-        return await axiosInstance.post("", report)
+        return await axiosInstance.post("", {title, text})
 
     }
+
+    return { report, reportList };
 }

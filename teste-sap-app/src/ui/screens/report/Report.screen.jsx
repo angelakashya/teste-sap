@@ -69,7 +69,7 @@ export function Report() {
                     >
                     </Input>
                     <button>Submit</button>
-                    {error && <div className="erro">{error}</div>}
+                    {/* {error && <div className="erro">{error}</div>} */}
                 </form>
             </div>
         </>
